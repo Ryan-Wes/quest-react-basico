@@ -1,22 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import TextoColorido from './components/TextoColorido';
+import Button from './components/Button'; // Importando o novo componente Button
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <TextoColorido className="texto-colorido" text="Guga é brabo!" color="#B005FF" />
+        <Button label="Baixar CV" />
       </header>
     </div>
   );
